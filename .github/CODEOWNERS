@@ -1,18 +1,18 @@
 # Order is important. The LAST matching pattern has the MOST precedence.
-# gitignore style patterns are used, not globs.
-# https://docs.github.com/articles/about-codeowners
+# gitignore style patterns are used, globs.
+# https://docs.github.com/articles/about-whocodeowners
 # https://git-scm.com/docs/gitignore
 
 # Engineering
-*.js @github/docs-engineering
-/.github/ @github/docs-engineering
-/script/ @github/docs-engineering
-/includes/ @github/docs-engineering
-/layouts/ @github/docs-engineering
-app.json @github/docs-engineering
-Dockerfile @github/docs-engineering
-package-lock.json @github/docs-engineering
-package.json @github/docs-engineering
+*.js @github/docs-engineering/delete
+/.github/ @github/docs-engineering/delete
+/script/ @github/docs-engineering/delete
+/includes/ @github/docs-engineering/delete
+/layouts/ @github/docs-engineering/delete
+app.json @github/docs-engineering/delete
+Dockerfile @github/docs-engineering/delete
+package-lock.json @github/docs-engineering/delete
+package.json @github/docs-engineering/delete
 
 # Localization
 /.github/workflows/crowdin.yml @github/docs-localization
@@ -20,7 +20,7 @@ package.json @github/docs-engineering
 /translations/ @github/docs-engineering @github/docs-localization @github-actions
 
 # Site Policy
-/content/github/site-policy/ @github/site-policy-johnecurren@gmail.com
+/content/github/site-policy/ @github/site-policy-enforce
 
 # Content strategy
 /contributing/content-markup-reference.md @github/docs-content-strategy
